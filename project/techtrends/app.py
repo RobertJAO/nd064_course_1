@@ -34,6 +34,8 @@ def index():
     connection = get_db_connection()
     posts = connection.execute('SELECT * FROM posts').fetchall()
     connection.close()
+    for post in posts:
+        app.logger.info('Article "'+post['title']+'" retrieved!')
     return render_template('index.html', posts=posts)
 
 # Define how each individual article is rendered 
