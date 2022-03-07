@@ -1,0 +1,10 @@
+## The chart API version
+apiVersion: v1
+name: techtrends
+description: techtrends app
+keywords:
+- techtrends
+version: 1.0.0
+maintainers:
+- name: andreaog
+  email: andreaog@xyz.com
